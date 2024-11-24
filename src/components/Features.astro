@@ -1,0 +1,47 @@
+---
+const features = [
+  {
+    title: 'Lightning Fast',
+    description: 'Optimized performance with modern tech stack for blazing fast load times.',
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>`
+  },
+  {
+    title: 'Responsive Design',
+    description: 'Perfectly adapted for all devices, from mobile phones to large desktops.',
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>`
+  },
+  {
+    title: 'SEO Optimized',
+    description: 'Built with search engines in mind to help you rank better and get found.',
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>`
+  },
+  {
+    title: '24/7 Support',
+    description: 'Round-the-clock support to help you with any questions or issues.',
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>`
+  }
+];
+---
+
+<section id="features" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center animate-on-scroll">
+      <h2 class="text-3xl font-bold font-poppins text-dark dark:text-white">Why Choose Us</h2>
+      <p class="mt-4 text-gray-600 dark:text-gray-300">Features that set us apart from the competition</p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+      {features.map((feature, index) => (
+        <div class="flex items-start space-x-4 animate-on-scroll" style={`animation-delay: ${index * 150}ms`}>
+          <div class="flex-shrink-0 p-3 bg-primary/10 dark:bg-primary/20 rounded-lg">
+            <div class="text-primary" set:html={feature.icon} />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-dark dark:text-white">{feature.title}</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">{feature.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

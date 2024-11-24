@@ -1,0 +1,115 @@
+---
+const aboutContent = {
+  mission: {
+    title: "Our Mission",
+    description: "To empower businesses through innovative digital solutions, creating impactful web experiences that drive growth and success in the digital landscape.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800"
+  },
+  vision: {
+    title: "Our Vision",
+    description: "To be the leading force in digital transformation, setting new standards in web development and helping businesses thrive in an ever-evolving digital world.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
+  }
+};
+---
+
+<section id="about" class="py-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center animate-on-scroll">
+      <h2 class="text-3xl font-bold font-poppins text-dark dark:text-white">About Us</h2>
+      <p class="mt-4 text-gray-600 dark:text-gray-300">Building the future of digital experiences</p>
+    </div>
+
+    <div class="mt-16 space-y-16">
+      <!-- Mission Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-on-scroll">
+        <div class="order-2 lg:order-1">
+          <h3 class="text-2xl font-bold font-poppins text-primary mb-4">{aboutContent.mission.title}</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+            {aboutContent.mission.description}
+          </p>
+          <ul class="mt-6 space-y-2">
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Innovative Solutions
+            </li>
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Customer-Centric Approach
+            </li>
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Quality Delivery
+            </li>
+          </ul>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img
+            src={aboutContent.mission.image}
+            alt="Our Mission"
+            class="rounded-lg shadow-xl w-full h-[400px] object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+
+      <!-- Vision Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-on-scroll">
+        <div>
+          <img
+            src={aboutContent.vision.image}
+            alt="Our Vision"
+            class="rounded-lg shadow-xl w-full h-[400px] object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold font-poppins text-primary mb-4">{aboutContent.vision.title}</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+            {aboutContent.vision.description}
+          </p>
+          <ul class="mt-6 space-y-2">
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Industry Leadership
+            </li>
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Continuous Innovation
+            </li>
+            <li class="flex items-center text-gray-600 dark:text-gray-300">
+              <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Global Impact
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Team Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 animate-on-scroll">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+          <div class="text-4xl font-bold text-primary mb-2">10+</div>
+          <div class="text-gray-600 dark:text-gray-300">Years Experience</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+          <div class="text-4xl font-bold text-primary mb-2">200+</div>
+          <div class="text-gray-600 dark:text-gray-300">Projects Completed</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+          <div class="text-4xl font-bold text-primary mb-2">50+</div>
+          <div class="text-gray-600 dark:text-gray-300">Team Members</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
